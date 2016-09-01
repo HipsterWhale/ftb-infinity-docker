@@ -14,3 +14,5 @@ RUN curl -SL $FTB_INFINITY_URL -o /tmp/infinity.zip && \
 ENV MINECRAFT_VERSION 1.7.10
 ENV MINECRAFT_OPTS -server -Xms2048m -Xmx3072m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
 ENV MINECRAFT_STARTUP_JAR FTBServer-1.7.10-1614.jar
+
+VOLUME /opt/minecraft
